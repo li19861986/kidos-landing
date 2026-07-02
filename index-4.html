@@ -1,0 +1,822 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>קידוס הפקות | הפעלות וימי הולדת לילדים בצפון ובמרכז</title>
+  <meta name="description" content="קידוס הפקות אירועים לילדים בצפון ובמרכז – ימי הולדת, מתנפחים, מפעילים, עמדות יצירה, מסיבות גן ואירועים למשפחות." />
+  <meta property="og:title" content="קידוס הפקות | הפעלות וימי הולדת לילדים" />
+  <meta property="og:description" content="הופכים כל יום הולדת לחוויה בלתי נשכחת עם הפקות צבעוניות, מקצועיות ושמחות לילדים." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://placehold.co/1200x630/FFC93C/7B2FBE?text=Kidos" />
+  <meta property="og:locale" content="he_IL" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&family=Rubik:wght@700;800;900&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "קידוס הפקות אירועים",
+    "description": "הפקות אירועים לילדים, ימי הולדת, מתנפחים, עמדות יצירה והפעלות בצפון ובמרכז.",
+    "areaServed": ["צפון ישראל", "מרכז ישראל"],
+    "telephone": "+972XXXXXXXXX",
+    "url": "https://example.com",
+    "image": "https://placehold.co/1200x630/FFC93C/7B2FBE?text=Kidos",
+    "priceRange": "₪₪"
+  }
+  </script>
+
+  <style>
+    :root {
+      --yellow: #FFC93C;
+      --pink: #FF5DA2;
+      --blue: #4CC9F0;
+      --purple: #7B2FBE;
+      --cream: #FFF9F0;
+      --dark: #241331;
+      --muted: #6c5f74;
+      --white: #fff;
+      --shadow: 0 18px 45px rgba(36, 19, 49, .12);
+      --radius: 22px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Assistant", sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(255, 201, 60, .28), transparent 28rem),
+        radial-gradient(circle at bottom left, rgba(76, 201, 240, .22), transparent 25rem),
+        var(--cream);
+      color: var(--dark);
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    h1, h2, h3 {
+      font-family: "Rubik", sans-serif;
+      line-height: 1.15;
+      margin: 0;
+    }
+
+    .container {
+      width: min(var(--max), calc(100% - 32px));
+      margin-inline: auto;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 48px;
+      padding: 12px 20px;
+      border-radius: 999px;
+      border: 0;
+      font-weight: 800;
+      cursor: pointer;
+      transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+      box-shadow: 0 10px 24px rgba(123, 47, 190, .16);
+      font-family: "Assistant", sans-serif;
+    }
+
+    .btn:hover { transform: translateY(-3px) scale(1.02); }
+    .btn-primary { background: var(--pink); color: var(--white); }
+    .btn-secondary { background: var(--white); color: var(--purple); }
+    .btn-whatsapp { background: #25D366; color: white; }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255, 249, 240, .9);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(123, 47, 190, .08);
+    }
+
+    .header-inner {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .logo {
+      font-family: "Rubik", sans-serif;
+      font-size: 1.35rem;
+      font-weight: 900;
+      color: var(--purple);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      white-space: nowrap;
+    }
+
+    .logo::before {
+      content: "🎉";
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      background: var(--yellow);
+      box-shadow: var(--shadow);
+    }
+
+    nav {
+      display: none;
+      gap: 18px;
+      font-weight: 800;
+      color: var(--muted);
+    }
+
+    nav a:hover { color: var(--purple); }
+
+    .hero {
+      position: relative;
+      padding: 48px 0 34px;
+      isolation: isolate;
+    }
+
+    .hero::before,
+    .hero::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      border-radius: 999px;
+      filter: blur(2px);
+      opacity: .7;
+    }
+
+    .hero::before {
+      width: 180px;
+      height: 180px;
+      background: var(--blue);
+      top: 70px;
+      right: -90px;
+    }
+
+    .hero::after {
+      width: 140px;
+      height: 140px;
+      background: var(--pink);
+      bottom: 10px;
+      left: -70px;
+    }
+
+    .hero-grid {
+      display: grid;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: white;
+      color: var(--purple);
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-weight: 900;
+      box-shadow: var(--shadow);
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 8vw, 5rem);
+      max-width: 850px;
+    }
+
+    .hero p {
+      font-size: clamp(1.12rem, 3vw, 1.45rem);
+      color: var(--muted);
+      margin: 18px 0 24px;
+      max-width: 680px;
+      font-weight: 700;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .hero-image {
+      position: relative;
+      border-radius: 30px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transform: rotate(-1.5deg);
+      background: linear-gradient(135deg, var(--yellow), var(--blue), var(--pink));
+      padding: 10px;
+    }
+
+    .hero-image img {
+      border-radius: 24px;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      background: #fff;
+    }
+
+    .decor {
+      position: absolute;
+      pointer-events: none;
+      font-size: 2rem;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    .decor.one { top: 18%; left: 7%; }
+    .decor.two { bottom: 12%; right: 7%; animation-delay: .8s; }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-12px) rotate(8deg); }
+    }
+
+    section { padding: 48px 0; }
+
+    .section-head {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    .section-head h2 {
+      font-size: clamp(1.8rem, 5vw, 3rem);
+      color: var(--purple);
+    }
+
+    .section-head p {
+      margin: 10px auto 0;
+      color: var(--muted);
+      font-weight: 700;
+      max-width: 660px;
+    }
+
+    .trust-grid,
+    .services-grid,
+    .packages-grid,
+    .testimonials-grid,
+    .footer-grid {
+      display: grid;
+      gap: 16px;
+    }
+
+    .trust-card,
+    .service-card,
+    .package-card,
+    .testimonial-card,
+    .faq details,
+    .contact-box {
+      background: white;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(123, 47, 190, .08);
+    }
+
+    .trust-card {
+      padding: 20px;
+      text-align: center;
+      font-weight: 900;
+      color: var(--purple);
+      font-size: 1.08rem;
+    }
+
+    .service-card {
+      padding: 24px;
+      transition: transform .2s ease;
+    }
+
+    .service-card:hover { transform: translateY(-6px) rotate(-1deg); }
+
+    .icon {
+      width: 58px;
+      height: 58px;
+      display: grid;
+      place-items: center;
+      border-radius: 20px;
+      background: var(--cream);
+      font-size: 2rem;
+      margin-bottom: 14px;
+    }
+
+    .service-card h3,
+    .package-card h3 {
+      font-size: 1.35rem;
+      color: var(--purple);
+      margin-bottom: 8px;
+    }
+
+    .service-card p,
+    .testimonial-card p,
+    .faq p {
+      color: var(--muted);
+      margin: 0;
+      font-weight: 600;
+    }
+
+    .package-card {
+      position: relative;
+      padding: 26px;
+    }
+
+    .package-card.featured {
+      border: 3px solid var(--pink);
+      transform: scale(1.02);
+    }
+
+    .popular {
+      position: absolute;
+      top: -15px;
+      inset-inline-start: 24px;
+      background: var(--pink);
+      color: white;
+      border-radius: 999px;
+      padding: 6px 14px;
+      font-weight: 900;
+      font-size: .9rem;
+    }
+
+    .price {
+      font-family: "Rubik", sans-serif;
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--dark);
+      margin: 12px 0;
+    }
+
+    ul {
+      padding: 0;
+      margin: 0 0 20px;
+      list-style: none;
+    }
+
+    li {
+      margin: 8px 0;
+      font-weight: 700;
+      color: var(--muted);
+    }
+
+    li::before {
+      content: "✓";
+      color: var(--pink);
+      font-weight: 900;
+      margin-left: 8px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      transition: transform .2s ease;
+      background: #fff;
+    }
+
+    .gallery-grid img:hover { transform: scale(1.04) rotate(-1deg); }
+
+    .testimonial-card {
+      padding: 24px;
+    }
+
+    .stars {
+      color: #ffb703;
+      letter-spacing: 2px;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .parent {
+      margin-top: 14px;
+      font-weight: 900;
+      color: var(--purple);
+    }
+
+    .faq {
+      display: grid;
+      gap: 12px;
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .faq details {
+      padding: 18px 20px;
+    }
+
+    .faq summary {
+      cursor: pointer;
+      font-weight: 900;
+      color: var(--purple);
+      font-size: 1.08rem;
+    }
+
+    .faq p { margin-top: 10px; }
+
+    .contact-grid {
+      display: grid;
+      gap: 20px;
+      align-items: start;
+    }
+
+    .contact-box {
+      padding: 26px;
+    }
+
+    .contact-box h3 {
+      color: var(--purple);
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+
+    form {
+      display: grid;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    label {
+      font-weight: 900;
+      color: var(--dark);
+    }
+
+    input, select {
+      width: 100%;
+      min-height: 48px;
+      border: 2px solid rgba(123, 47, 190, .16);
+      border-radius: 16px;
+      padding: 10px 14px;
+      font: inherit;
+      background: white;
+    }
+
+    input:focus, select:focus {
+      outline: 3px solid rgba(76, 201, 240, .35);
+      border-color: var(--blue);
+    }
+
+    footer {
+      background: var(--dark);
+      color: white;
+      padding: 42px 0 24px;
+      margin-top: 42px;
+    }
+
+    footer a, footer p {
+      color: rgba(255,255,255,.78);
+      font-weight: 700;
+    }
+
+    footer h3, footer h4 { color: white; margin: 0 0 10px; }
+
+    .copyright {
+      margin-top: 28px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255,255,255,.14);
+      text-align: center;
+      color: rgba(255,255,255,.65);
+    }
+
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 18px;
+      left: 18px;
+      z-index: 60;
+      width: 58px;
+      height: 58px;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      background: #25D366;
+      color: white;
+      font-size: 1.8rem;
+      box-shadow: 0 14px 30px rgba(0,0,0,.22);
+      transform: translateY(90px);
+      opacity: 0;
+      transition: .25s ease;
+    }
+
+    .floating-whatsapp.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    @media (min-width: 700px) {
+      .trust-grid { grid-template-columns: repeat(4, 1fr); }
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+      .packages-grid { grid-template-columns: repeat(3, 1fr); }
+      .testimonials-grid { grid-template-columns: repeat(3, 1fr); }
+      .gallery-grid { grid-template-columns: repeat(4, 1fr); }
+      .contact-grid { grid-template-columns: 1fr 1.1fr; }
+      .footer-grid { grid-template-columns: 1.4fr 1fr 1fr; }
+    }
+
+    @media (min-width: 960px) {
+      nav { display: flex; }
+      .hero { padding: 76px 0 54px; }
+      .hero-grid { grid-template-columns: 1.05fr .95fr; }
+      .services-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    @media (max-width: 420px) {
+      .header-inner { gap: 8px; }
+      .logo { font-size: 1.05rem; }
+      .header-inner .btn { padding: 10px 12px; font-size: .9rem; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="קידוס הפקות">קידוס הפקות</a>
+      <nav aria-label="ניווט ראשי">
+        <a href="#services">שירותים</a>
+        <a href="#packages">חבילות</a>
+        <a href="#gallery">גלריה</a>
+        <a href="#testimonials">המלצות</a>
+        <a href="#contact">צור קשר</a>
+      </nav>
+      <a class="btn btn-whatsapp" href="https://wa.me/972XXXXXXXXX" target="_blank" rel="noopener">וואטסאפ</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <span class="decor one">🎈</span>
+      <span class="decor two">✨</span>
+      <div class="container hero-grid">
+        <div>
+          <div class="badge">🎊 הפקות שמחות לילדים</div>
+          <h1>הופכים כל יום הולדת לחוויה בלתי נשכחת</h1>
+          <p>הפקות אירועים לילדים בצפון ובמרכז – מפעילים, מתנפחים, עמדות יצירה והפתעות.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://wa.me/972XXXXXXXXX?text=שלום%20קידוס,%20אשמח%20לקבל%20הצעת%20מחיר%20לאירוע" target="_blank" rel="noopener">קבלו הצעת מחיר בוואטסאפ</a>
+            <a class="btn btn-secondary" href="#packages">לחבילות שלנו</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="hero.jpg" onerror="this.src='https://placehold.co/800x600/FFC93C/7B2FBE?text=Kidos+Productions'" alt="ילדים שמחים באירוע של קידוס הפקות" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section aria-label="נתוני אמון">
+      <div class="container trust-grid">
+        <div class="trust-card">+500 אירועים מאושרים</div>
+        <div class="trust-card">מעל 7 שנות ניסיון</div>
+        <div class="trust-card">צוות מפעילים מקצועי</div>
+        <div class="trust-card">שירות בצפון ובמרכז</div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="section-head">
+          <h2>השירותים שלנו</h2>
+          <p>כל מה שצריך לאירוע ילדים מושלם — במקום אחד, עם צוות שמגיע מוכן לעשות שמח.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card"><div class="icon">🎂</div><h3>ימי הולדת</h3><p>הפעלות מותאמות גיל, מוזיקה, משחקים וטקס עוגה מרגש.</p></article>
+          <article class="service-card"><div class="icon">🌈</div><h3>מסיבות גן</h3><p>פעילות קלילה, שמחה ומסודרת לגני ילדים וקבוצות צעירות.</p></article>
+          <article class="service-card"><div class="icon">🎤</div><h3>בת/בר מצווה</h3><p>אטרקציות, כניסות מרשימות, דוכנים ותוכן שמתאים לכל המשפחה.</p></article>
+          <article class="service-card"><div class="icon">🏢</div><h3>אירועי חברה למשפחות</h3><p>הפקות לעובדים וילדים עם מתחמי פעילות, אוכל וחוויה מלאה.</p></article>
+          <article class="service-card"><div class="icon">🏰</div><h3>מתנפחים ומתקנים</h3><p>מתנפחים יבשים ורטובים, מתקנים צבעוניים ואטרקציות שטח.</p></article>
+          <article class="service-card"><div class="icon">🎨</div><h3>עמדות יצירה והפעלות</h3><p>תחנות יצירה, משחקים, אתגרים והפעלות שמחזיקות את הילדים בעניינים.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="packages">
+      <div class="container">
+        <div class="section-head">
+          <h2>חבילות אירוע</h2>
+          <p>בחרו את החבילה שמתאימה לאופי האירוע, כמות הילדים והתקציב.</p>
+        </div>
+        <div class="packages-grid">
+          <article class="package-card">
+            <h3>חבילת בסיס</h3>
+            <div class="price">החל מ־₪___</div>
+            <ul>
+              <li>מפעיל מקצועי</li>
+              <li>הגברה ומוזיקה</li>
+              <li>משחקי חברה</li>
+              <li>טקס עוגה</li>
+            </ul>
+            <a class="btn btn-primary" href="https://wa.me/972XXXXXXXXX?text=שלום,%20אשמח%20לפרטים%20על%20חבילת%20בסיס" target="_blank" rel="noopener">לפרטים בוואטסאפ</a>
+          </article>
+
+          <article class="package-card featured">
+            <span class="popular">הכי פופולרי</span>
+            <h3>חבילת פרימיום</h3>
+            <div class="price">החל מ־₪___</div>
+            <ul>
+              <li>הפעלה מלאה</li>
+              <li>בובת ענק / אטרקציה לבחירה</li>
+              <li>עמדת יצירה או משחק</li>
+              <li>מייצג עוגה חגיגי</li>
+            </ul>
+            <a class="btn btn-primary" href="https://wa.me/972XXXXXXXXX?text=שלום,%20אשמח%20לפרטים%20על%20חבילת%20פרימיום" target="_blank" rel="noopener">לפרטים בוואטסאפ</a>
+          </article>
+
+          <article class="package-card">
+            <h3>חבילת VIP</h3>
+            <div class="price">החל מ־₪___</div>
+            <ul>
+              <li>הפקה מורחבת</li>
+              <li>מספר אטרקציות לבחירה</li>
+              <li>דוכני מזון</li>
+              <li>צוות מותאם לכמות המשתתפים</li>
+            </ul>
+            <a class="btn btn-primary" href="https://wa.me/972XXXXXXXXX?text=שלום,%20אשמח%20לפרטים%20על%20חבילת%20VIP" target="_blank" rel="noopener">לפרטים בוואטסאפ</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="container">
+        <div class="section-head">
+          <h2>גלריה</h2>
+          <p>רגעים צבעוניים מהאירועים שלנו.</p>
+        </div>
+        <div class="gallery-grid">
+          <img src="gallery1.jpg" onerror="this.src='https://placehold.co/500x500/FF5DA2/FFFFFF?text=Gallery+1'" alt="הפעלה צבעונית לילדים" loading="lazy">
+          <img src="gallery2.jpg" onerror="this.src='https://placehold.co/500x500/4CC9F0/241331?text=Gallery+2'" alt="מתנפח באירוע ילדים" loading="lazy">
+          <img src="gallery3.jpg" onerror="this.src='https://placehold.co/500x500/FFC93C/7B2FBE?text=Gallery+3'" alt="ילדים נהנים ביום הולדת" loading="lazy">
+          <img src="gallery4.jpg" onerror="this.src='https://placehold.co/500x500/7B2FBE/FFFFFF?text=Gallery+4'" alt="מסיבת יום הולדת לילדים" loading="lazy">
+          <img src="gallery5.jpg" onerror="this.src='https://placehold.co/500x500/FFF9F0/FF5DA2?text=Gallery+5'" alt="עמדת יצירה לילדים" loading="lazy">
+          <img src="gallery6.jpg" onerror="this.src='https://placehold.co/500x500/4CC9F0/FFFFFF?text=Gallery+6'" alt="אטרקציה לילדים באירוע" loading="lazy">
+          <img src="gallery7.jpg" onerror="this.src='https://placehold.co/500x500/FFC93C/241331?text=Gallery+7'" alt="ילדים מחייכים באירוע" loading="lazy">
+          <img src="gallery8.jpg" onerror="this.src='https://placehold.co/500x500/FF5DA2/FFFFFF?text=Gallery+8'" alt="הפקת יום הולדת שמחה" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <div class="container">
+        <div class="section-head">
+          <h2>מה ההורים מספרים?</h2>
+        </div>
+        <div class="testimonials-grid">
+          <article class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>“הילדים היו בעננים. הכל הגיע בזמן, מסודר, צבעוני ומקצועי. חסכתם לנו המון כאב ראש.”</p>
+            <div class="parent">מיכל, עפולה</div>
+          </article>
+          <article class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>“הצוות היה מדהים עם הילדים, ידע להחזיק אותם מרותקים והאווירה הייתה פשוט שמחה.”</p>
+            <div class="parent">אורטל, חיפה</div>
+          </article>
+          <article class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>“עשינו אירוע ועד עובדים למשפחות וקיבלנו מלא מחמאות. הכל היה מתוקתק ברמה גבוהה.”</p>
+            <div class="parent">דניאל, יקנעם</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <div class="section-head">
+          <h2>שאלות נפוצות</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>באילו אזורים אתם עובדים?</summary>
+            <p>אנחנו נותנים שירות בצפון ובמרכז, בהתאם לסוג האירוע, זמינות הצוות והציוד הנדרש.</p>
+          </details>
+          <details>
+            <summary>כמה זמן מראש להזמין?</summary>
+            <p>מומלץ להזמין לפחות שבועיים עד חודש מראש, ובחודשי הקיץ והחגים אפילו מוקדם יותר.</p>
+          </details>
+          <details>
+            <summary>מה כלול בחבילה?</summary>
+            <p>כל חבילה כוללת תכולה שונה, אך בדרך כלל ניתן לשלב מפעיל, הגברה, פעילות, אטרקציות, דוכנים ומתנפחים לפי צורך.</p>
+          </details>
+          <details>
+            <summary>האם יש התאמה לגילאים שונים?</summary>
+            <p>כן. אנחנו מתאימים את סגנון ההפעלה, הקצב, המשחקים והאטרקציות לגיל הילדים ולאופי הקבוצה.</p>
+          </details>
+          <details>
+            <summary>מה קורה במזג אוויר גרוע?</summary>
+            <p>במקרה של חום קיצוני, גשם או רוחות, נמליץ על פתרון חלופי כמו מקום מקורה, שינוי פריסה או התאמת ציוד בטוחה.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container contact-grid">
+        <div class="contact-box">
+          <h3>רוצים לסגור אירוע?</h3>
+          <p>שלחו לנו פרטים ונחזור אליכם עם התאמה מדויקת לאירוע שלכם.</p>
+          <p>
+            <a class="btn btn-whatsapp" href="https://wa.me/972XXXXXXXXX" target="_blank" rel="noopener">שליחה בוואטסאפ</a>
+          </p>
+          <p><strong>טלפון:</strong> <a href="tel:+972XXXXXXXXX">+972-XX-XXX-XXXX</a></p>
+        </div>
+
+        <div class="contact-box">
+          <h3>טופס קצר להצעת מחיר</h3>
+          <form id="leadForm">
+            <div>
+              <label for="name">שם</label>
+              <input id="name" name="name" type="text" placeholder="השם שלכם" required>
+            </div>
+            <div>
+              <label for="phone">טלפון</label>
+              <input id="phone" name="phone" type="tel" placeholder="050-0000000" required>
+            </div>
+            <div>
+              <label for="date">תאריך האירוע</label>
+              <input id="date" name="date" type="date" required>
+            </div>
+            <div>
+              <label for="type">סוג האירוע</label>
+              <select id="type" name="type" required>
+                <option value="">בחרו סוג אירוע</option>
+                <option>יום הולדת</option>
+                <option>מסיבת גן</option>
+                <option>בר/בת מצווה</option>
+                <option>אירוע חברה למשפחות</option>
+                <option>השכרת מתנפחים</option>
+                <option>אחר</option>
+              </select>
+            </div>
+            <button class="btn btn-primary" type="submit">שליחת פרטים בוואטסאפ</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <h3>קידוס הפקות</h3>
+        <p>הפקות אירועים לילדים עם אנרגיה, צבע, מקצועיות והמון שמחה.</p>
+      </div>
+      <div>
+        <h4>קישורים מהירים</h4>
+        <p><a href="#services">שירותים</a></p>
+        <p><a href="#packages">חבילות</a></p>
+        <p><a href="#gallery">גלריה</a></p>
+        <p><a href="#contact">צור קשר</a></p>
+      </div>
+      <div>
+        <h4>אזורי שירות</h4>
+        <p>צפון הארץ</p>
+        <p>מרכז הארץ</p>
+        <p>אירועים פרטיים, מוסדות וארגונים</p>
+      </div>
+    </div>
+    <div class="container copyright">
+      © <span id="year"></span> קידוס הפקות אירועים. כל הזכויות שמורות.
+    </div>
+  </footer>
+
+  <a class="floating-whatsapp" id="floatingWhatsapp" href="https://wa.me/972XXXXXXXXX" target="_blank" rel="noopener" aria-label="שליחת הודעת וואטסאפ">☘</a>
+
+  <script>
+    const floatingWhatsapp = document.getElementById('floatingWhatsapp');
+    const year = document.getElementById('year');
+    const form = document.getElementById('leadForm');
+    const whatsappNumber = '972XXXXXXXXX';
+
+    year.textContent = new Date().getFullYear();
+
+    window.addEventListener('scroll', () => {
+      floatingWhatsapp.classList.toggle('show', window.scrollY > 360);
+    });
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const date = document.getElementById('date').value;
+      const type = document.getElementById('type').value;
+
+      const message = `שלום קידוס הפקות, אשמח לקבל הצעת מחיר.%0Aשם: ${encodeURIComponent(name)}%0Aטלפון: ${encodeURIComponent(phone)}%0Aתאריך האירוע: ${encodeURIComponent(date)}%0Aסוג האירוע: ${encodeURIComponent(type)}`;
+
+      window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank', 'noopener');
+    });
+  </script>
+</body>
+</html>
